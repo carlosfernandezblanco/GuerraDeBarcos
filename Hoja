@@ -6,7 +6,7 @@ public class NodosFinales extends Componente{
 
 	@Override
 	public void agregar(Componente c) {
-		System.out.println("no se puede agregar hoja");
+		System.out.println("no se puede agregar nodos ");
 	}
 	@Override
 	public void eliminar(Componente c) {
