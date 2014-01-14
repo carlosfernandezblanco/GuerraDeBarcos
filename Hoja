@@ -1,5 +1,4 @@
-
-public class Hoja extends Componente{
+public class NodosFinales extends Componente{
 
 	public Hoja(int id, int vida) {
 		super(id,vida);
