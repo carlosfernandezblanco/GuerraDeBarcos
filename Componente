@@ -1,0 +1,18 @@
+
+public abstract class Componente {
+	
+	protected final int NUMERONODOS=20;
+	
+	protected int id;
+	protected int vida;
+	//protected int escudo;
+	
+	public Componente(int id,int vida){
+		this.id=id;
+		this.vida=vida;
+	}
+	
+	public abstract void agregar(Componente componente);
+	public abstract void eliminar(Componente componente);
+	public abstract void mostrar(int profundidad);
+}
