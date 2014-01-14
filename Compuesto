@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+
+public class Compuesto extends Componente {
+
+	private ArrayList<Componente> hijos = new ArrayList<Componente>();
+	
+	public Compuesto(int id,int vida) {
+		super(id,vida); 
+	}
+
+	@Override
+	public void agregar(Componente componente) {
+		hijos.add(componente);
+	}
+
+	@Override
+	public void eliminar(Componente componente) {
+		hijos.remove(componente);
+	}
+	
+	@Override
+	public void mostrar(int profundidad) {
+		System.out.println(this.id+ "nivel: "+profundidad);
+		for(int i=0;i<hijos.size();i++){
+			hijos.get(i).mostrar(profundidad + 1);
+		}
+	}
+}
